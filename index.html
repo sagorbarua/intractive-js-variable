@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Variables</title>
+</head>
+<body>
+  <!-- <button  > Addition</button> -->
+   
+  <button class="add-btn" onclick="console.log(`The cartQuantity is:${cartQuantity}`)">Show Quantity
+  </button>
+
+  <button class="add-btn" 
+
+  onclick="
+  cartQuantity = cartQuantity + 1;
+  console.log(`The cartQuantity is:${cartQuantity}`)";
+  
+  
+  >
+  
+
+Add to cart
+  </button>
+
+  <button class="add-btn" onclick="
+  
+  cartQuantity = cartQuantity + 2;
+  console.log(`The cartQuantity is:${cartQuantity}`)";>+2
+  </button>
+
+  <button class="add-btn" onclick="
+  
+  cartQuantity = cartQuantity + 3;
+  console.log(`The cartQuantity is:${cartQuantity}`)">+3
+  </button>
+
+
+  <button class="add-btn" onclick="
+  
+  cartQuantity = 0;
+  console.log(`The cartQuantity is:${cartQuantity}`)">Reset
+  </button>
+
+
+  <button class="add-btn" 
+  onclick="
+  if(cartQuantity!= 0){
+    cartQuantity = cartQuantity - 1;
+    console.log(`The cartQuantity is:${cartQuantity}`)  
+  }else{
+    cartQuantity = 0;
+    console.log(`The cartQuantity is:${cartQuantity}`)
+
+  }">Minus
+
+  </button>
+
+  <h2>Please Open console by clicking inspect</h2>
+
+
+
+  <script>
+   let cartQuantity = 0
+   
+
+   
+      
+   
+
+  </script>
+</body>
+</html>
